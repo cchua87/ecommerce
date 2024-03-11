@@ -7,7 +7,7 @@ const ProductDetailPage: React.FC<{ product: any }> = ({ product }) => {
         <Layout>
             <div className="container">
                 <h1>{product.name}</h1>
-                <p>Product Number: {product.productnumber}</p>
+                <p>Product Number: {product.productNumber}</p>
                 <p>Price: ${product.price}</p>
                 <AddToCartButton productId={product.id} quantity={1} />
             </div>
