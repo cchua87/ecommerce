@@ -5,3 +5,4 @@ obj/
 packages/
 [Bb]in
 [Dd]ebug*/
+.vs/
