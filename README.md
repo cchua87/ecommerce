@@ -35,3 +35,4 @@ To get started, clone this repo.
 * Go to EcommerceNextJS folder
 * Run `npm install`
 * Run `npm run dev`
+* Follow link http://localhost:3000
