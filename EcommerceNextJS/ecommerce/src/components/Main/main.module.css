@@ -1,0 +1,11 @@
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container fills the viewport */
+  }
+  
+  .container {
+    flex: 1; /* Grow to fill available space */
+    max-width: 800px;
+    margin: 0 auto;
+  }

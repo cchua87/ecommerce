@@ -1,0 +1,54 @@
+@Ecommerce_HostAddress = http://localhost:5000
+
+### PRODUCTS
+### Get All
+GET {{Ecommerce_HostAddress}}/Products
+Accept: application/json
+
+### Create
+POST {{Ecommerce_HostAddress}}/Products
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Product description",
+    "price": 11.00
+}
+
+### Get Product
+GET {{Ecommerce_HostAddress}}/Products/1
+Accept: application/json
+
+### Get Featured Products
+GET {{Ecommerce_HostAddress}}/Products/featured
+Accept: application/json
+
+### Update Product
+PUT {{Ecommerce_HostAddress}}/Products/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Product description",
+    "price": 11.00
+}
+
+### Delete Product
+DELETE {{Ecommerce_HostAddress}}/DeleteProduct/1
+
+### CART
+### Add to Cart
+POST {{Ecommerce_HostAddress}}/Cart
+Accept: application/json
+Content-Type: application/json
+
+{
+    "productid": "2",
+    "quantity": "2"
+}
+
+### Get Cart
+GET {{Ecommerce_HostAddress}}/Cart/Cart-8c629a03-b99b-46fb-a95f-c6b914af540a
+Accept: application/json
